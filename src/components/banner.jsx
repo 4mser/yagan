@@ -4,10 +4,10 @@ import React from 'react'
 const Banner = () => {
   return (
     <Link href={'/carta'} >
-        <div className='fixed w-full top-14 h-10 left-0 bg-gradient-to-tr from-cyan-500 to-cyan-800 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
+        <div className='fixed w-full top-14 h-10 left-0 bg-gradient-to-tr from-red-600 to-red-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
-            <p>Explora el nuevo Menú</p>
-            <img src="/icons/shines.png" alt="" className='w-6' />
+            <p>Explora la nueva barra de Sushi</p>
+            <img src="/icons/sushi.svg" alt="" className='w-6' />
 
             </div>
     </Link>
