@@ -17,7 +17,7 @@ const Navbar = () => {
               height={25}
               className={`${pathname === '/' ? '' : 'opacity-60'}`}
           />
-          <p className={`text-[9px] ${pathname === '/' ? '' : 'opacity-60'}`}>Inicio</p>
+          <p className={`text-[9px] ${pathname === '/' ? 'text-cyan-300' : 'opacity-60'}`}>Inicio</p>
         </Link>
         <Link href={'/tragos'} className='flex h-10 justify-between items-center flex-col '>
           <Image
@@ -26,7 +26,7 @@ const Navbar = () => {
               height={25}
               className={`${pathname === '/tragos' ? '' : 'opacity-60'} translate-x-[3px]`}
           />
-          <p className={`text-[9px] ${pathname === '/tragos' ? '' : 'opacity-60'}`}>Tragos</p>
+          <p className={`text-[9px] ${pathname === '/tragos' ? 'text-cyan-300' : 'opacity-60'}`}>Tragos</p>
         </Link>
         <Link href={'/carta'} className='flex h-10 justify-between items-center flex-col ' >
           <Image
@@ -35,7 +35,7 @@ const Navbar = () => {
               height={25}
               className={`${pathname === '/carta' ? '' : 'opacity-60'} translate-y-[3px]`}
           />
-          <p className={`text-[9px] ${pathname === '/carta' ? '' : 'opacity-60'}`}>Comida</p>
+          <p className={`text-[9px] ${pathname === '/carta' ? 'text-cyan-300' : 'opacity-60'}`}>Comida</p>
         </Link>
         
         
@@ -46,7 +46,7 @@ const Navbar = () => {
               height={25}
               className={`${pathname === '/sushi' ? '' : 'opacity-60'} translate-x-[2px] translate-y-[1px]`}
           />
-          <p className={`text-[9px] ${pathname === '/sushi' ? '' : 'opacity-60'}`}>Sushi</p>
+          <p className={`text-[9px] ${pathname === '/sushi' ? 'text-cyan-300' : 'opacity-60'}`}>Sushi</p>
         </Link>
     </nav>
   )
