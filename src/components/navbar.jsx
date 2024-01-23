@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <nav className='fixed z-50 bg-black/20 backdrop-blur-md w-full bottom-0 left-0 flex  justify-around items-center py-3 border-t border-white/10'>
+    <nav className='fixed z-50 bg-[#141414] backdrop-blur-md w-full bottom-0 left-0 flex  justify-around items-center py-3 border-t border-white/10'>
       <Link href={'/'} className='flex h-10 justify-between items-center flex-col '>
           <Image
               src={`/icons/${pathname === '/' ? 'homeActive.svg' : 'home.svg'}`}
