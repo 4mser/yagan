@@ -3,7 +3,7 @@ import React from 'react'
 
 const Topbar = () => {
   return (
-    <div className='flex justify-between pt-3 items-center px-3'>
+    <div className='flex justify-between pt-4 items-center px-3'>
 
         <Image
             src={'/icons/menu.svg'}
@@ -15,13 +15,13 @@ const Topbar = () => {
             src={'/images/logo-azul.png'}
             width={130}
             height={20}
-            className='drop-shadow-[0_0_0.3rem_#ffffff70]'
+            className='drop-shadow-[0_0_0.3rem_#ffffff70] -translate-y-1'
         />
         <Image
             src={'/icons/sun-rising-loop.svg'}
             width={30}
             height={30}
-            className='drop-shadow-[0_0_0.3rem_#ffffff70]'
+            className='drop-shadow-[0_0_0.2rem_#ffffff70]'
         />
 
     </div>
