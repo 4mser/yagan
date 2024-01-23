@@ -15,7 +15,7 @@ const Topbar = () => {
             src={'/images/logo-azul.png'}
             width={130}
             height={20}
-            className='drop-shadow-[0_0_0.3rem_#ffffff70] -translate-y-1'
+            className=' -translate-y-1'
         />
         <Image
             src={'/icons/sun-rising-loop.svg'}
