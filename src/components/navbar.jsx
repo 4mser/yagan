@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <nav className='fixed w-full bottom-0 left-0 flex justify-around items-center py-4 border-t border-white/10'>
+    <nav className='fixed w-full bottom-0 left-0 flex justify-around items-center py-3 border-t border-white/10'>
       <Image
             src={'/icons/carta.svg'}
             width={25}

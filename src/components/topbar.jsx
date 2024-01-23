@@ -3,7 +3,7 @@ import React from 'react'
 
 const Topbar = () => {
   return (
-    <div className='flex justify-between pt-4 items-center px-4'>
+    <div className='flex justify-between px-4 py-2 items-center border-b border-white/10'>
 
         <Image
             src={'/icons/menu.svg'}
