@@ -1,18 +1,70 @@
+
+'use client'
 import Link from 'next/link'
-import React from 'react'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-const Banner = () => {
+
+// import required modules
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+export default function App() {
   return (
-    <Link href={'/carta'} >
-        <div className='fixed w-full top-14 h-12 left-0 bg-gradient-to-tr from-red-600 to-red-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
+   
+    <main className='absolute top-14 left-0 w-full overflow-hidden'>
+        <Swiper
+        spaceBetween={0}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+            <Link href={'/sushi'} >
+                <div className='h-12 w-full bg-gradient-to-tr from-red-600 to-red-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
-            <p>Explora la nueva barra de Sushi</p>
-            <img src="/icons/sushi.svg" alt="" className='w-6' />
-            <p>{`->`}</p>
+                    <p>Explora la nueva barra de Sushi</p>
+                    <img src="/icons/sushi.svg" alt="" className='w-6' />
+                    <p>{`->`}</p>
 
-            </div>
-    </Link>
-  )
+                </div>
+            </Link>
+        </SwiperSlide>
+
+        <SwiperSlide>
+            <Link href={'/carta'} >
+                <div className='h-12 w-full bg-gradient-to-tr from-cyan-600 to-cyan-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
+
+                    <p>Descubre nuevos platos</p>
+                    <img src="/icons/sushi.svg" alt="" className='w-6' />
+                    <p>{`->`}</p>
+
+                </div>
+            </Link>
+        </SwiperSlide>
+
+        <SwiperSlide>
+            <Link href={'/carta'} >
+                <div className='h-12 w-full bg-gradient-to-tr from-yellow-600 to-yellow-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
+
+                    <p>Conoce los tragos de autor</p>
+                    <img src="/icons/sushi.svg" alt="" className='w-6' />
+                    <p>{`->`}</p>
+
+                </div>
+            </Link>
+        </SwiperSlide>
+      </Swiper>
+    </main>
+    
+  );
 }
-
-export default Banner
