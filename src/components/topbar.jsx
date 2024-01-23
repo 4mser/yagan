@@ -83,6 +83,17 @@ const Topbar = () => {
         },
     }
 
+    const backdropVariants = {
+        open: { 
+            backdropFilter: "blur(10px)", 
+            transition: { duration: 0.3 } 
+        },
+        closed: { 
+            backdropFilter: "blur(0px)", 
+            transition: { duration: 0.3 } 
+        },
+    }
+
     return (
         <>
             <div className='fixed z-50 w-full top-0 left-0 bg-[#141414]  flex justify-between px-4 py-2 items-center border-b border-white/10'>
@@ -112,22 +123,28 @@ const Topbar = () => {
 
                 <AnimatePresence>
                 {openMenu && (
-                    <div 
-                        className='fixed z-50 left-0 top-0 w-full min-h-[100dvh] backdrop-blur-sm overflow-hidden'
+                    <motion.div 
+                        className='fixed z-50 left-0 top-0 w-full min-h-[100dvh] overflow-hidden'
                         onClick={handleMenu}
+                        variants={backdropVariants}
+                        initial="closed"
+                        animate="open"
+                        exit="closed"
                     >
                         <motion.ul 
-                            className='w-3/4 min-h-[100dvh] bg-dark-1 border-r border-white/10 p-10'
+                            className='w-1/2 min-h-[100dvh] bg-dark-1 border-r border-white/10 px-8 py-10'
                             variants={menuVariants}
                             initial="closed"
                             animate="open"
                             exit="closed"
                         >
                             <li>Hotel</li>
-                            <li>Logos</li>
-                            <li>Mo sé</li>
+                            <li>Historia</li>
+                            <li>Diseño</li>
+                            <li>Cultura</li>
+                            <li>Divulgación Científica</li>
                         </motion.ul>
-                    </div>
+                    </motion.div>
                 )}
             </AnimatePresence>
         </>
