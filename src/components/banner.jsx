@@ -32,7 +32,7 @@ export default function App() {
             <Link href={'/sushi'} >
                 <div className='h-12 w-full bg-gradient-to-tr from-red-600 to-red-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
-                    <p>Explora la nueva barra de Sushi</p>
+                    <p>Explora la nueva barra de sushi</p>
                     <img src="/icons/sushi.svg" alt="" className='w-6' />
                     <p>{`->`}</p>
 
@@ -70,6 +70,18 @@ export default function App() {
 
                     <p>Date un gusto con nuestros postres</p>
                     <img src="/icons/pie.svg" alt="" className='w-6' />
+                    <p>{`->`}</p>
+
+                </div>
+            </Link>
+        </SwiperSlide>
+
+        <SwiperSlide>
+            <Link href={'/carta'} >
+                <div className='h-12 w-full bg-gradient-to-tr from-lime-600 to-green-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
+
+                    <p>Conoce nuestro menú vegano</p>
+                    <img src="/icons/vegan.svg" alt="" className='w-6' />
                     <p>{`->`}</p>
 
                 </div>
