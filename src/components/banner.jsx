@@ -18,7 +18,7 @@ export default function App() {
         spaceBetween={0}
         centeredSlides={true}
         autoplay={{
-          delay: 3500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -44,8 +44,8 @@ export default function App() {
             <Link href={'/carta'} >
                 <div className='h-12 w-full bg-gradient-to-tr from-cyan-600 to-cyan-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
-                    <p>Descubre nuevos platos</p>
-                    <img src="/icons/sushi.svg" alt="" className='w-6' />
+                    <p>Conoce los tragos de autor</p>
+                    <img src="/icons/cocktail-glass.svg" alt="" className='w-6' />
                     <p>{`->`}</p>
 
                 </div>
@@ -56,8 +56,20 @@ export default function App() {
             <Link href={'/carta'} >
                 <div className='h-12 w-full bg-gradient-to-tr from-yellow-600 to-yellow-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
-                    <p>Conoce los tragos de autor</p>
-                    <img src="/icons/sushi.svg" alt="" className='w-6' />
+                    <p>Descubre nuevos sabores</p>
+                    <img src="/icons/spaghetti.svg" alt="" className='w-6' />
+                    <p>{`->`}</p>
+
+                </div>
+            </Link>
+        </SwiperSlide>
+
+        <SwiperSlide>
+            <Link href={'/carta'} >
+                <div className='h-12 w-full bg-gradient-to-tr from-pink-600 to-pink-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
+
+                    <p>Deleitate con los postres</p>
+                    <img src="/icons/pie.svg" alt="" className='w-6' />
                     <p>{`->`}</p>
 
                 </div>
