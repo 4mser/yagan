@@ -85,11 +85,11 @@ const Topbar = () => {
 
     const backdropVariants = {
         open: { 
-            backdropFilter: "blur(10px)", 
+            opacity: 1, 
             transition: { duration: 0.3 } 
         },
         closed: { 
-            backdropFilter: "blur(0px)", 
+            opacity: 0, 
             transition: { duration: 0.3 } 
         },
     }
@@ -123,28 +123,36 @@ const Topbar = () => {
 
                 <AnimatePresence>
                 {openMenu && (
-                    <motion.div 
-                        className='fixed z-50 left-0 top-0 w-full min-h-[100dvh] overflow-hidden'
-                        onClick={handleMenu}
-                        variants={backdropVariants}
-                        initial="closed"
-                        animate="open"
-                        exit="closed"
-                    >
-                        <motion.ul 
-                            className='w-1/2 min-h-[100dvh] bg-dark-1 border-r border-white/10 px-8 py-10'
-                            variants={menuVariants}
+                    <>
+                        {/* Fondo semi-transparente */}
+                        <motion.div 
+                            className='fixed z-40 left-0 top-0 w-full min-h-screen bg-black/30'
+                            variants={backdropVariants}
                             initial="closed"
                             animate="open"
                             exit="closed"
+                        />
+
+                        {/* Div con backdrop-blur */}
+                        <motion.div 
+                            className='fixed z-50 left-0 top-0 w-full min-h-screen backdrop-blur-sm'
+                            variants={backdropVariants}
+                            initial="closed"
+                            animate="open"
+                            exit="closed"
+                            onClick={handleMenu}
                         >
-                            <li>Hotel</li>
-                            <li>Historia</li>
-                            <li>Diseño</li>
-                            <li>Cultura</li>
-                            <li>Divulgación Científica</li>
-                        </motion.ul>
-                    </motion.div>
+                            <motion.ul 
+                                className='w-1/2 min-h-screen bg-gradient-to-tr from-cyan-900 to-cyan-500 border-r border-white/10'
+                                variants={menuVariants}
+                                initial="closed"
+                                animate="open"
+                                exit="closed"
+                            >
+                                {/* Elementos del menú */}
+                            </motion.ul>
+                        </motion.div>
+                    </>
                 )}
             </AnimatePresence>
         </>
