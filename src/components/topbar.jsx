@@ -9,7 +9,7 @@ const Topbar = () => {
             src={'/icons/menu.svg'}
             width={28}
             height={28}
-            className='drop-shadow-[0_0_0.3rem_#ffffff70]'
+            className=''
         />
         <Image
             src={'/images/logo-azul.png'}
@@ -21,7 +21,7 @@ const Topbar = () => {
             src={'/icons/sun-rising-loop.svg'}
             width={28}
             height={28}
-            className='drop-shadow-[0_0_0.2rem_#ffffff70]'
+            className=''
         />
 
     </div>
