@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className='fixed z-50 bg-black/20 backdrop-blur-md w-full bottom-0 left-0 flex  justify-around items-center py-3 border-t border-white/10'>
-      <Link href={'/'} className='flex h-10 justify-between items-center flex-col gap-[2px]'>
+      <Link href={'/'} className='flex h-10 justify-between items-center flex-col '>
           <Image
               src={`/icons/${pathname === '/' ? 'homeActive.svg' : 'home.svg'}`}
               width={25}
@@ -19,7 +19,7 @@ const Navbar = () => {
           />
           <p className={`text-[9px] ${pathname === '/' ? '' : 'opacity-60'}`}>Inicio</p>
         </Link>
-        <Link href={'/tragos'} className='flex h-10 justify-between items-center flex-col gap-[2px]'>
+        <Link href={'/tragos'} className='flex h-10 justify-between items-center flex-col '>
           <Image
               src={`/icons/${pathname === '/tragos' ? 'cocktailActive.svg' : 'cocktail.svg'}`}
               width={25}
@@ -28,23 +28,23 @@ const Navbar = () => {
           />
           <p className={`text-[9px] ${pathname === '/tragos' ? '' : 'opacity-60'}`}>Tragos</p>
         </Link>
-        <Link href={'/carta'} className='flex h-10 justify-between items-center flex-col gap-[2px]' >
+        <Link href={'/carta'} className='flex h-10 justify-between items-center flex-col ' >
           <Image
               src={`/icons/${pathname === '/carta' ? 'cartaActive.svg' : 'carta.svg'}`}
-              width={21}
-              height={21}
+              width={20}
+              height={25}
               className={`${pathname === '/carta' ? '' : 'opacity-60'} translate-y-[3px]`}
           />
           <p className={`text-[9px] ${pathname === '/carta' ? '' : 'opacity-60'}`}>Comida</p>
         </Link>
         
         
-        <Link href={'/sushi'} className='flex h-10 justify-between items-center flex-col gap-[2px]' >
+        <Link href={'/sushi'} className='flex h-10 justify-between items-center flex-col ' >
           <Image
               src={`/icons/${pathname === '/sushi' ? 'sushiActive.svg' : 'sushimenu.svg'}`}
-              width={26}
-              height={26}
-              className={`${pathname === '/sushi' ? '' : 'opacity-60'} translate-x-[2px] translate-y-[3px]`}
+              width={25}
+              height={25}
+              className={`${pathname === '/sushi' ? '' : 'opacity-60'} translate-x-[2px] translate-y-[1px]`}
           />
           <p className={`text-[9px] ${pathname === '/sushi' ? '' : 'opacity-60'}`}>Sushi</p>
         </Link>
