@@ -143,13 +143,16 @@ const Topbar = () => {
                             onClick={handleMenu}
                         >
                             <motion.ul 
-                                className='w-1/2 min-h-screen bg-gradient-to-tr from-cyan-900 to-cyan-500 border-r border-white/10'
+                                className='w-fit min-h-screen bg-gradient-to-tr from-cyan-600 to-cyan-900  border-r border-white/10 p-5 pr-16 flex flex-col gap-4'
                                 variants={menuVariants}
                                 initial="closed"
                                 animate="open"
                                 exit="closed"
                             >
-                                {/* Elementos del menú */}
+                                <li>Hotel</li>
+                                <li>Historia</li>
+                                <li>Biodiversidad</li>
+                                <li>Contacto</li>
                             </motion.ul>
                         </motion.div>
                     </>
