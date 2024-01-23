@@ -41,7 +41,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide>
-            <Link href={'/carta'} >
+            <Link href={'/tragos'} >
                 <div className='h-12 w-full bg-gradient-to-tr from-cyan-600 to-cyan-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
                     <p>Conoce los tragos de autor</p>
@@ -68,7 +68,7 @@ export default function App() {
             <Link href={'/carta'} >
                 <div className='h-12 w-full bg-gradient-to-tr from-pink-600 to-pink-900 flex justify-center gap-2 px-4 py-2 items-center border-b border-white/10 '>
 
-                    <p>Deleitate con los postres</p>
+                    <p>Date un gusto con nuestros postres</p>
                     <img src="/icons/pie.svg" alt="" className='w-6' />
                     <p>{`->`}</p>
 
