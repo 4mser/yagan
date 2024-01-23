@@ -8,6 +8,7 @@ const Banner = () => {
 
             <p>Explora la nueva barra de Sushi</p>
             <img src="/icons/sushi.svg" alt="" className='w-6' />
+            <p>{`->`}</p>
 
             </div>
     </Link>
