@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <nav className='fixed w-full bottom-0 left-0 flex justify-around items-center py-3 border-t border-white/10'>
+    <nav className='fixed z-50 bg-black/20 backdrop-blur-md w-full bottom-0 left-0 flex justify-around items-center py-3 border-t border-white/10'>
         <Link href={'/carta'} >
           <Image
               src={`/icons/${pathname === '/carta' ? 'cartaActive.svg' : 'carta.svg'}`}
