@@ -143,7 +143,7 @@ const Topbar = () => {
                             onClick={handleMenu}
                         >
                             <motion.ul 
-                                className='w-fit min-h-screen bg-gradient-to-tr from-cyan-600 to-cyan-900  border-r border-white/10 p-5 pr-16 flex flex-col gap-4'
+                                className='w-fit min-h-screen bg-gradient-to-tr from-cyan-600 to-cyan-900   p-5 pr-16 flex flex-col gap-4'
                                 variants={menuVariants}
                                 initial="closed"
                                 animate="open"
