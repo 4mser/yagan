@@ -28,7 +28,7 @@ export default function Cartas() {
             <Link href={'/tragos'} >
                 <div className='h-48 overflow-hidden  rounded-md shadow-md'>
 
-                <img src="https://app-valdi.s3.amazonaws.com/menuTragos2_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover' />
+                <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover' />
                 </div>
             </Link>
         </SwiperSlide>
@@ -37,7 +37,7 @@ export default function Cartas() {
             <Link href={'/carta'} >
             <div className='h-48 overflow-hidden rounded-md  shadow-md'>
 
-            <img src="https://app-valdi.s3.amazonaws.com/portadaCartaRestaurante.png" alt="" className='w-full h-full object-cover' />
+            <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover' />
             </div>
             </Link>
         </SwiperSlide>
