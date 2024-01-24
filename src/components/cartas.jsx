@@ -28,7 +28,7 @@ export default function Cartas() {
 
         <SwiperSlide>
           <Link href={'/carta'}>
-            <div className='overflow-hidden rounded-lg  shadow-md  p-2 bg-white/10'>
+            <div className='overflow-hidden rounded-lg  shadow-md  p-1.5 bg-white/10'>
 
               <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
@@ -37,7 +37,7 @@ export default function Cartas() {
 
         <SwiperSlide>
           <Link href={'/tragos'}>
-            <div className='overflow-hidden  rounded-lg shadow-md p-2 bg-white/10'>
+            <div className='overflow-hidden  rounded-lg shadow-md p-1.5 bg-white/10'>
               <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
           </Link>
