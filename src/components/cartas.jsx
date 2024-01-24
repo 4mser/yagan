@@ -26,14 +26,7 @@ export default function Cartas() {
       >
         
 
-        <SwiperSlide >
-          <Link href={'/carta'}>
-            <div className='overflow-hidden rounded-lg  shadow-md  border border-white/30  from-yellow-300 to-green-200'>
-
-              <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
-            </div>
-          </Link>
-        </SwiperSlide>
+        
 
         <SwiperSlide >
           <Link href={'/tragos'}>
@@ -47,6 +40,15 @@ export default function Cartas() {
           <Link href={'/sushi'}>
             <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-red-600 to-red-800'>
               <img src="https://app-valdi.s3.amazonaws.com/menuSushi-03.png" alt="" className='w-full h-full object-cover rounded-md' />
+            </div>
+          </Link>
+        </SwiperSlide>
+
+        <SwiperSlide >
+          <Link href={'/carta'}>
+            <div className='overflow-hidden rounded-lg  shadow-md  border border-white/30  from-yellow-300 to-green-200'>
+
+              <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
           </Link>
         </SwiperSlide>
