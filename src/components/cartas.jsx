@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Cartas() {
   return (
    
-    <main className='pt-1 left-0 w-full overflow-hidden px-4'>
+    <main className='pt-3 left-0 w-full overflow-hidden px-4'>
         <p className='py-2'>Menús principales</p>
         <Swiper
         spaceBetween={10}
@@ -28,7 +28,7 @@ export default function Cartas() {
 
         <SwiperSlide >
           <Link href={'/carta'}>
-            <div className='overflow-hidden rounded-lg  shadow-md  p-1.5 bg-gradient-to-b from-yellow-300 to-green-200'>
+            <div className='overflow-hidden rounded-lg  shadow-md  border border-white/30  from-yellow-300 to-green-200'>
 
               <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
@@ -37,7 +37,7 @@ export default function Cartas() {
 
         <SwiperSlide >
           <Link href={'/tragos'}>
-            <div className='overflow-hidden  rounded-lg shadow-md p-1.5 bg-gradient-to-b from-cyan-300 to-cyan-600'>
+            <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-cyan-300 to-cyan-600'>
               <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
           </Link>
@@ -45,7 +45,7 @@ export default function Cartas() {
 
         <SwiperSlide>
           <Link href={'/sushi'}>
-            <div className='overflow-hidden  rounded-lg shadow-md p-1.5 bg-gradient-to-b from-red-600 to-red-800'>
+            <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-red-600 to-red-800'>
               <img src="https://app-valdi.s3.amazonaws.com/menuSushi-03.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
           </Link>
