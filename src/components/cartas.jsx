@@ -15,7 +15,7 @@ export default function Cartas() {
     <main className='absolute top-32 left-0 w-full overflow-hidden px-3'>
         <p className='py-1 px-1'>Menús</p>
         <Swiper
-        spaceBetween={0}
+        spaceBetween={10}
         slidesPerView={3.5}
         centeredSlides={false}
         pagination={{
