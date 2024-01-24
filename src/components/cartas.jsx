@@ -26,7 +26,7 @@ export default function Cartas() {
       >
         <SwiperSlide>
             <Link href={'/sushi'} >
-                <div className='h-fit overflow-hidden  rounded-3xl shadow-md'>
+                <div className='h-48 overflow-hidden  rounded-md shadow-md'>
 
                 <img src="https://app-valdi.s3.amazonaws.com/carta.png" alt="" className='w-full h-full object-cover' />
                 </div>
@@ -34,37 +34,10 @@ export default function Cartas() {
         </SwiperSlide>
 
         <SwiperSlide>
-            <Link href={'/tragos'} >
-            <div className='h-fit overflow-hidden  rounded-3xl shadow-md'>
-
-            <img src="https://app-valdi.s3.amazonaws.com/carta.png" alt="" className='w-full h-full object-cover' />
-            </div>
-            </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
             <Link href={'/carta'} >
-            <div className='h-fit overflow-hidden  rounded-3xl shadow-md'>
+            <div className='h-48 overflow-hidden rounded-md  shadow-md'>
 
-            <img src="https://app-valdi.s3.amazonaws.com/carta.png" alt="" className='w-full h-full object-cover' />
-            </div>
-            </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <Link href={'/carta'} >
-            <div className='h-fit overflow-hidden  rounded-3xl shadow-md'>
-
-            <img src="https://app-valdi.s3.amazonaws.com/carta.png" alt="" className='w-full h-full object-cover' />
-            </div>
-            </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <Link href={'/carta'} >
-            <div className='h-fit overflow-hidden  rounded-3xl shadow-md'>
-
-            <img src="https://app-valdi.s3.amazonaws.com/carta.png" alt="" className='w-full h-full object-cover' />
+            <img src="https://app-valdi.s3.amazonaws.com/portadaCartaRestaurante.png" alt="" className='w-full h-full object-cover' />
             </div>
             </Link>
         </SwiperSlide>
