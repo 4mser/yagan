@@ -27,8 +27,8 @@ export default function Anuncios() {
 
         <SwiperSlide >
           <Link href={'/carta'}>
-            <div className='h-32 overflow-hidden rounded-lg  shadow-md  p-1.5 bg-gradient-to-br flex items-center px-5 from-zinc-800 to-transparent '>
-                    Anuncio
+            <div className='h-32 overflow-hidden rounded-lg  shadow-md  bg-gradient-to-br flex items-center from-zinc-800 to-transparent '>
+                    <img src="https://app-valdi.s3.amazonaws.com/yagan/anuncios/sushi-02.png" alt="" className='w-full h-full object-cover' />
             </div>
           </Link>
         </SwiperSlide>
