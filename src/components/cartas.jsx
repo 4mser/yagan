@@ -13,7 +13,7 @@ export default function Cartas() {
   return (
    
     <main className='pt-3 left-0 w-full overflow-hidden px-4'>
-        <p className='py-2'>Menús principales</p>
+        <p className='py-2 font-semibold'>Menús principales</p>
         <Swiper
         spaceBetween={10}
         slidesPerView={2.5}
@@ -33,6 +33,7 @@ export default function Cartas() {
             <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-cyan-300 to-cyan-600'>
               <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
+            <p className='text-xs font-thin py-2 opacity-90'>Tragos</p>
           </Link>
         </SwiperSlide>
 
@@ -41,6 +42,7 @@ export default function Cartas() {
             <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-red-600 to-red-800'>
               <img src="https://app-valdi.s3.amazonaws.com/menuSushi-03.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
+            <p className='text-xs font-thin py-2 opacity-90'>Sushi</p>
           </Link>
         </SwiperSlide>
 
@@ -50,6 +52,7 @@ export default function Cartas() {
 
               <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
+            <p className='text-xs font-thin py-2 opacity-90'>Platos</p>
           </Link>
         </SwiperSlide>
 
