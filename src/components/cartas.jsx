@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Cartas() {
   return (
    
-    <main className='pt-3 left-0 w-full overflow-hidden px-4'>
+    <main className='pt-1 left-0 w-full overflow-hidden px-4'>
         <p className='py-2'>Menús principales</p>
         <Swiper
         spaceBetween={10}
