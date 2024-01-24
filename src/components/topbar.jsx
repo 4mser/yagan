@@ -183,6 +183,16 @@ const Topbar = () => {
                                 </li>
 
                                 <li className='flex items-center gap-2'>
+                                    <img src="/icons/paint.svg" alt="" />
+                                    Arte y Diseño
+                                </li>
+
+                                <li className='flex items-center gap-2'>
+                                    <img src="/icons/events.svg" alt="" />
+                                    Eventos
+                                </li>
+
+                                <li className='flex items-center gap-2'>
                                     <img src="/icons/contact.svg" alt="" />
                                     Contacto
                                 </li>
