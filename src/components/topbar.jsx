@@ -156,7 +156,7 @@ const Topbar = () => {
                             onClick={handleMenu}
                         >
                             <motion.ul 
-                                className='w-fit min-h-screen bg-dark-1 border-r border-white/10   p-10 pt-20 pr-20 flex flex-col gap-5'
+                                className='w-fit min-h-screen bg-dark-1 border-r border-white/10   p-8 pt-20 pr-20 flex flex-col gap-5'
                                 variants={menuVariants}
                                 initial="closed"
                                 animate="open"
@@ -176,15 +176,15 @@ const Topbar = () => {
                                     <img src="/icons/fox.svg" alt="" />
                                     Biodiversidad
                                 </li>
-                                
-                                <li className='flex items-center gap-2'>
-                                    <img src="/icons/contact.svg" alt="" />
-                                    Contacto
-                                </li>
 
                                 <li className='flex items-center gap-2'>
                                     <img src="/icons/recycling.svg" alt="" />
                                     Sostenibilidad
+                                </li>
+
+                                <li className='flex items-center gap-2'>
+                                    <img src="/icons/contact.svg" alt="" />
+                                    Contacto
                                 </li>
                                 
                             </motion.ul>
