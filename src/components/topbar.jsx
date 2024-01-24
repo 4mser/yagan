@@ -156,43 +156,43 @@ const Topbar = () => {
                             onClick={handleMenu}
                         >
                             <motion.ul 
-                                className='w-fit min-h-screen bg-dark-1 border-r border-white/10   p-8 pt-20 pr-20 flex flex-col gap-5'
+                                className='w-fit min-h-screen bg-dark-1 border-r border-white/10   p-8 pt-20 pr-20 flex flex-col gap-6'
                                 variants={menuVariants}
                                 initial="closed"
                                 animate="open"
                                 exit="closed"
                             >
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/hotel.svg" alt="" />
                                     Hotel
                                 </li>
                                 
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/bow-and-arrow.svg" alt="" />
                                     Historia y Patrimonio
                                 </li>
                                 
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/fox.svg" alt="" />
                                     Biodiversidad
                                 </li>
 
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/recycling.svg" alt="" />
                                     Sostenibilidad
                                 </li>
 
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/paint.svg" alt="" />
                                     Arte y Diseño
                                 </li>
 
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/events.svg" alt="" />
                                     Eventos
                                 </li>
 
-                                <li className='flex items-center gap-2'>
+                                <li className='flex items-center gap-3 '>
                                     <img src="/icons/contact.svg" alt="" />
                                     Contacto
                                 </li>
