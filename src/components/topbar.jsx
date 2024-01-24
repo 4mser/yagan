@@ -162,10 +162,26 @@ const Topbar = () => {
                                 animate="open"
                                 exit="closed"
                             >
-                                <li>Hotel</li>
-                                <li>Historia</li>
-                                <li>Biodiversidad</li>
-                                <li>Contacto</li>
+                                <li className='flex items-center gap-2'>
+                                    <img src="/icons/hotel.svg" alt="" />
+                                    Hotel
+                                </li>
+                                
+                                <li className='flex items-center gap-2'>
+                                    <img src="/icons/bow-and-arrow.svg" alt="" />
+                                    Historia y Patrimonio
+                                </li>
+                                
+                                <li className='flex items-center gap-2'>
+                                    <img src="/icons/fox.svg" alt="" />
+                                    Biodiversidad
+                                </li>
+                                
+                                <li className='flex items-center gap-2'>
+                                    <img src="/icons/contact.svg" alt="" />
+                                    Contacto
+                                </li>
+                                
                             </motion.ul>
                         </motion.div>
                     </>

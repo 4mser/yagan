@@ -27,7 +27,7 @@ export default function Anuncios() {
 
         <SwiperSlide >
           <Link href={'/carta'}>
-            <div className='h-32 overflow-hidden rounded-lg  shadow-md  p-1.5 bg-gradient-to-br flex items-center px-5 from-zinc-700 to-transparent '>
+            <div className='h-32 overflow-hidden rounded-lg  shadow-md  p-1.5 bg-gradient-to-br flex items-center px-5 from-zinc-800 to-transparent '>
                     Anuncio
             </div>
           </Link>
@@ -35,7 +35,7 @@ export default function Anuncios() {
 
         <SwiperSlide >
           <Link href={'/tragos'}>
-            <div className='h-32 overflow-hidden  rounded-lg shadow-md p-1.5 bg-gradient-to-br flex items-center px-5 from-indigo-950 to-transparent '>
+            <div className='h-32 overflow-hidden  rounded-lg shadow-md p-1.5 bg-gradient-to-br flex items-center px-5 from-zinc-800 to-transparent '>
                 Descuento
             </div>
           </Link>
@@ -43,7 +43,7 @@ export default function Anuncios() {
 
         <SwiperSlide>
           <Link href={'/sushi'}>
-            <div className='h-32 overflow-hidden  rounded-lg shadow-md p-1.5 bg-gradient-to-br flex items-center px-5 from-pink-950 to-transparent '>
+            <div className='h-32 overflow-hidden  rounded-lg shadow-md p-1.5 bg-gradient-to-br flex items-center px-5 from-zinc-800 to-transparent '>
                 Algo
             </div>
           </Link>
