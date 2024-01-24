@@ -190,7 +190,7 @@ const Topbar = () => {
                                 exit="closed"
                             >
                                 <img src="/images/happyHour.png" alt="hH" className='w-full object-contain px-5 animate-neon' />
-                                <p>Quedan: {timeUntilHappyHour} para el happy hour</p>
+                                <p className='text-center'>Quedan: {timeUntilHappyHour} para el happy hour</p>
                             </motion.div>
                         </motion.div>
                 )}
