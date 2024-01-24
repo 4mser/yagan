@@ -8,7 +8,7 @@ export default function Home() {
       <Topbar />
       <Banner />
 
-      <Cartas />
+      {/* <Cartas /> */}
     </main>
   );
 }
