@@ -24,22 +24,23 @@ export default function Cartas() {
         navigation={false}
         className="mySwiper"
       >
-        <SwiperSlide>
-            <Link href={'/tragos'} >
-                <div className='h-48 overflow-hidden  rounded-md shadow-md'>
+        
 
-                <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover' />
-                </div>
-            </Link>
+        <SwiperSlide>
+          <Link href={'/carta'}>
+            <div className='overflow-hidden rounded-md  shadow-md  p-2 bg-white/10'>
+
+              <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
+            </div>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-            <Link href={'/carta'} >
-            <div className='h-48 overflow-hidden rounded-md  shadow-md'>
-
-            <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover' />
+          <Link href={'/tragos'}>
+            <div className='overflow-hidden  rounded-md shadow-md p-2 bg-white/10'>
+              <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
-            </Link>
+          </Link>
         </SwiperSlide>
 
       </Swiper>
