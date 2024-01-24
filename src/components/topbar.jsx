@@ -175,7 +175,7 @@ const Topbar = () => {
             <AnimatePresence>
                 {openHappy && (
                         <motion.div 
-                            className='fixed z-50 left-0 top-0 w-full min-h-screen backdrop-blur-sm flex justify-center items-center'
+                            className='fixed z-50 left-0 top-0 w-full min-h-screen backdrop-blur-xl flex justify-center items-center'
                             variants={backdropHappyVariants}
                             initial="closed"
                             animate="open"

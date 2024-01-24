@@ -7,8 +7,7 @@ export default function Home() {
     <main>
       <Topbar />
       <Banner />
-
-      {/* <Cartas /> */}
+      <Cartas />
     </main>
   );
 }
