@@ -13,7 +13,7 @@ export default function Cartas() {
   return (
    
     <main className='absolute top-32 left-0 w-full overflow-hidden px-3'>
-        <p className='py-1 px-1'>Menús</p>
+        <p className='py-1 px-1'>Menús principales</p>
         <Swiper
         spaceBetween={10}
         slidesPerView={3}
