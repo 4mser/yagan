@@ -25,10 +25,10 @@ export default function Cartas() {
         className="mySwiper"
       >
         <SwiperSlide>
-            <Link href={'/sushi'} >
+            <Link href={'/tragos'} >
                 <div className='h-48 overflow-hidden  rounded-md shadow-md'>
 
-                <img src="https://app-valdi.s3.amazonaws.com/carta.png" alt="" className='w-full h-full object-cover' />
+                <img src="https://app-valdi.s3.amazonaws.com/menuTragos2_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover' />
                 </div>
             </Link>
         </SwiperSlide>
