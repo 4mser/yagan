@@ -127,7 +127,7 @@ const Topbar = () => {
                     />
                 </button>
                 <Image
-                    src={'/images/logo-azul.png'}
+                    src={'/images/logo-rojo.png'}
                     width={130}
                     height={20}
                     className=' -translate-y-1'
