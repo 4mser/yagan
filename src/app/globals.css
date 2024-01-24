@@ -12,3 +12,17 @@ body {
   background-color: #141414;
   color: white;
 }
+
+.animate-neon {
+  animation: neon 3s ease-in-out infinite;
+}
+
+@keyframes neon {
+  0%, 100% {
+      filter: brightness(1);
+  }
+  50% {
+      filter: brightness(2);
+  }
+}
+

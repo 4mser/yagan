@@ -1,9 +1,38 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { formatDuration, intervalToDuration } from 'date-fns';
+import { es } from 'date-fns/locale';
 
 const Topbar = () => {
+
+    /* TIME  */
+
+    const [timeUntilHappyHour, setTimeUntilHappyHour] = useState('');
+
+    useEffect(() => {
+        const updateTimer = () => {
+            const now = new Date();
+            const sixPM = new Date(now);
+            sixPM.setHours(18, 0, 0, 0); // Establece la hora a las 6 PM
+
+            // Si ya pasaron las 6 PM, ajusta para el próximo día
+            if (now > sixPM) {
+                sixPM.setDate(sixPM.getDate() + 1);
+            }
+
+            const duration = intervalToDuration({ start: now, end: sixPM });
+            setTimeUntilHappyHour(formatDuration(duration, { locale: es })); // Formato en español
+        };
+
+        const timerId = setInterval(updateTimer, 1000); // Actualiza cada segundo
+
+        // Limpieza del intervalo cuando el componente se desmonte
+        return () => clearInterval(timerId);
+    }, []);
+
+    /* ---- */
     const [openMenu, setOpenMenu] = useState(false)
     const handleMenu = () => {
         setOpenMenu(!openMenu)
@@ -54,7 +83,7 @@ const Topbar = () => {
     const happyVariants = {
         open: { 
             opacity: 1, 
-            y: "-100%",
+            y: "-20%",
             backdropFilter: "blur(10px)", // Ajusta el valor de blur según tus necesidades
             transition: {
                 type: "tween",
@@ -154,13 +183,14 @@ const Topbar = () => {
                             onClick={handleHappy}
                         >
                             <motion.div 
-                                className='w-fit  ounded-2xl   p-10 flex flex-col gap-4'
+                                className='w-fit  ounded-2xl items-center   p-10 flex flex-col gap-4'
                                 variants={happyVariants}
                                 initial="closed"
                                 animate="open"
                                 exit="closed"
                             >
-                                <p>Quedan 6 horas para el happy hour</p>
+                                <img src="/images/happyHour.png" alt="hH" className='w-full object-contain px-5 animate-neon' />
+                                <p>Quedan: {timeUntilHappyHour} para el happy hour</p>
                             </motion.div>
                         </motion.div>
                 )}
