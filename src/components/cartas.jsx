@@ -16,7 +16,7 @@ export default function Cartas() {
         <p className='py-2 px-1'>Menús principales</p>
         <Swiper
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={2.5}
         centeredSlides={false}
         pagination={{
           clickable: true,
