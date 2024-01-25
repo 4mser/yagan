@@ -17,7 +17,7 @@ const Contacto = () => {
 
   // Variantes para el primer div (botón principal)
   const buttonVariants = {
-    open: { rotate: 15, scale: 1.1 },
+    open: { rotate: 315, scale: 1.1 },
     closed: { rotate: 0, scale: 1 }
   };
 
