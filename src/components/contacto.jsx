@@ -46,7 +46,7 @@ const Contacto = () => {
       </motion.div>
 
       <motion.div
-        className='absolute bottom-16 right-0 rounded-full bg-gradient-to-tr from-red-500 to-red-900 w-10 h-10 flex justify-center items-center'
+        className='absolute bottom-16 right-0 rounded-full bg-gradient-to-tr from-blue-500 to-blue-900 w-10 h-10 flex justify-center items-center'
         variants={menuVariants}
         animate={menuOpen ? "open" : "closed"}
       >

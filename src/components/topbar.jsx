@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { formatDuration, intervalToDuration } from 'date-fns';
 import { es } from 'date-fns/locale';
 import Link from 'next/link';
+import Logo from './logo';
 
 const Topbar = () => {
 
@@ -127,14 +128,7 @@ const Topbar = () => {
                         className=''
                     />
                 </button>
-                <Link href={'/'}>
-                    <Image
-                        src={'/images/logo-rojo.png'}
-                        width={130}
-                        height={20}
-                        className=' -translate-y-1'
-                    />
-                </Link>
+                <Logo />
                 <button onClick={handleHappy}>
                     <Image
                         src={'/icons/dizzy.svg'}
