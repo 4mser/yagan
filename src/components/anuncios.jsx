@@ -8,6 +8,8 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
 
 export default function Anuncios() {
   return (
@@ -20,7 +22,12 @@ export default function Anuncios() {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         navigation={false}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         
