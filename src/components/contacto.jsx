@@ -9,6 +9,10 @@ const Contacto = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const goToInstagram = () => {
+    window.location.href = "https://www.instagram.com/hotelyagan/";
+  };
+
   // Variantes para los íconos del menú
   const menuVariants = {
     open: { opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 260, damping: 20 } },
@@ -22,7 +26,7 @@ const Contacto = () => {
   };
 
   return (
-    <section className='fixed bottom-4 right-4'>
+    <section className='fixed bottom-4 right-4 z-50'>
       <motion.div
         className='rounded-full bg-gradient-to-tr from-slate-500 to-slate-800 w-14 h-14 flex justify-center items-center'
         onClick={toggleMenu}
@@ -36,6 +40,7 @@ const Contacto = () => {
         className='absolute bottom-0 right-16 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 w-10 h-10 flex justify-center items-center'
         variants={menuVariants}
         animate={menuOpen ? "open" : "closed"}
+        onClick={goToInstagram}
       >
         <img src="/icons/instagram.svg" alt="" className='w-6 opacity-85' />
       </motion.div>

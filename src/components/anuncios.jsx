@@ -22,10 +22,12 @@ export default function Anuncios() {
         pagination={{
           clickable: true,
         }}
-        autoplay={{
+        /* autoplay={{
           delay: 5000,
           disableOnInteraction: false,
-        }}
+        }} */
+
+        autoplay={false}
         navigation={false}
         modules={[Autoplay]}
         className="mySwiper"
