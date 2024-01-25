@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { formatDuration, intervalToDuration } from 'date-fns';
 import { es } from 'date-fns/locale';
+import Link from 'next/link';
 
 const Topbar = () => {
 
@@ -126,12 +127,14 @@ const Topbar = () => {
                         className=''
                     />
                 </button>
-                <Image
-                    src={'/images/logo-rojo.png'}
-                    width={130}
-                    height={20}
-                    className=' -translate-y-1'
-                />
+                <Link href={'/'}>
+                    <Image
+                        src={'/images/logo-rojo.png'}
+                        width={130}
+                        height={20}
+                        className=' -translate-y-1'
+                    />
+                </Link>
                 <button onClick={handleHappy}>
                     <Image
                         src={'/icons/dizzy.svg'}
@@ -162,6 +165,14 @@ const Topbar = () => {
                                 animate="open"
                                 exit="closed"
                             >
+
+                                <Link href={'/'}>
+                                    <li className='flex items-center gap-3 '>
+                                            <img src="/icons/home-diamond.svg" alt="" />
+                                            Inicio
+                                    </li>
+                                </Link>
+
                                 <li className='flex items-center gap-3 '>
                                     <img src="/icons/hotel.svg" alt="" />
                                     Hotel
