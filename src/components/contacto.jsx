@@ -26,7 +26,7 @@ const Contacto = () => {
   };
 
   return (
-    <section className='fixed bottom-4 right-4 z-50'>
+    <section className='fixed bottom-4 right-4 z-40'>
       <motion.div
         className='rounded-full bg-gradient-to-tr from-slate-500 to-slate-800 w-14 h-14 flex justify-center items-center'
         onClick={toggleMenu}
