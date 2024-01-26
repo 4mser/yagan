@@ -3,76 +3,109 @@ import React from 'react';
 const Page = () => {
   return (
     <div className='pt-14'>
+      {/* CLÁSICOS Section */}
       <div>
         <h2 className='text-lg font-semibold bg-gradient-to-tr from-cyan-600 to-blue-950 flex items-center px-4 py-3'>CLÁSICOS</h2>
-        <ul className='list-disc list-inside text-xs p-4'>
-          <li >
-            <strong>Piscola:</strong> Pisco - <span className='classic-price text-green-500'>$8</span>
-            <br /> Pisco.
+        <ul className='text-xs p-4'>
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Piscola</strong><span className='font-bold text-cyan-500'>$8</span>
+            </div>
+            <p className='font-normal opacity-80'>Pisco, Coca Cola.</p>
           </li>
-          <li >
-            <strong>Pisco Sour:</strong> Limón, pisco, goma, albumina, amargo de Angostura - <span className='classic-price text-green-500'>$9</span>
-            <br /> Limón, pisco, goma, albumina, amargo de Angostura.
+          <br />
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Pisco Sour</strong><span className='font-bold text-cyan-500'>$9</span>
+            </div>
+            <p className='font-normal opacity-80'>Limón, pisco, goma, albumina, amargo de Angostura.</p>
           </li>
-          {/* Agrega otros tragos clásicos aquí */}
         </ul>
       </div>
 
+      {/* MOJITOS Section */}
       <div>
-        <h2 className='text-lg font-semibold bg-gradient-to-tr from-lime-500 to-green-950 flex items-center px-4 py-3'>MOJITOS</h2>
-        <ul className='list-disc list-inside text-xs p-4'>
-          <li >
-            <strong>Mojito Tradicional:</strong> Menta, limones, ron blanco, limón, goma, agua mineral - <span className='classic-price text-green-500'>$10</span>
-            <br /> Menta, limones, ron blanco, limón, goma, agua mineral.
+        <h2 className='text-lg font-semibold bg-gradient-to-tr from-green-600 to-blue-300 flex items-center px-4 py-3'>MOJITOS</h2>
+        <ul className='text-xs p-4'>
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Mojito Tradicional</strong><span className='font-bold text-green-300'>$10</span>
+            </div>
+            <p className='font-normal opacity-80'>Menta, limones, ron blanco, limón, goma, agua mineral.</p>
           </li>
-          <li >
-            <strong>Mojito Ramazzotti:</strong> Menta, naranja, limón, ron blanco, jugo de naranja, Ramazzotti, agua mineral - <span className='classic-price text-green-500'>$11</span>
-            <br /> Menta, naranja, limón, ron blanco, jugo de naranja, Ramazzotti, agua mineral.
-          </li>
-          {/* Agrega otros mojitos aquí */}
-        </ul>
-      </div>
-      <div>
-        <h2 className='text-lg font-semibold bg-gradient-to-tr from-indigo-400 to-indigo-950 flex items-center px-4 py-3'>AUTOR</h2>
-        <ul className='list-disc list-inside text-xs p-4'>
-          <li >
-            <strong>Cazador Furtivo:</strong> Jägermeister, triple sec, limón, jugo de naranja - <span className='classic-price text-green-500'>$12</span>
-            <br /> Jägermeister, triple sec, limón, jugo de naranja.
-          </li>
-          <li >
-            <strong>Amore Milano:</strong> Whisky, Campari, jugo de pomelo, jugo de limón, goma - <span className='classic-price text-green-500'>$13</span>
-            <br /> Whisky, Campari, jugo de pomelo, jugo de limón, goma.
-          </li>
-          {/* Agrega otros tragos de autor aquí */}
-        </ul>
-      </div>
-      <div>
-        <h2 className='text-lg font-semibold bg-gradient-to-tr from-gray-500 to-gray-950 flex items-center px-4 py-3'>BAR SIN ALCOHOL</h2>
-        <ul className='list-disc list-inside text-xs p-4'>
-          <li >
-            <strong>Jugos del Día:</strong> Variedad de jugos frescos disponibles diariamente - <span className='classic-price text-green-500'>$6</span>
-            <br /> Variedad de jugos frescos disponibles diariamente.
-          </li>
-          <li >
-            <strong>Cordillerano Autor:</strong> Amargo de Angostura, Sprite, azahar, soda, limón - <span className='classic-price text-green-500'>$7</span>
-            <br /> Amargo de Angostura, Sprite, azahar, soda, limón.
+          <br />
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Mojito Ramazzotti</strong><span className='font-bold text-green-300'>$11</span>
+            </div>
+            <p className='font-normal opacity-80'>Menta, naranja, limón, ron blanco, jugo de naranja, Ramazzotti, agua mineral.</p>
           </li>
         </ul>
       </div>
+
+      {/* AUTOR Section */}
       <div>
-        <h2 className='text-lg font-semibold bg-gradient-to-tr from-yellow-300 to-yellow-950 flex items-center px-4 py-3'>MICHELADAS</h2>
-        <ul className='list-disc list-inside text-xs p-4'>
-          <li >
-            <strong>Chelada Sal de Autor:</strong> Sal de autor - <span className='classic-price text-green-500'>$5</span>
-            <br /> Sal de autor.
+        <h2 className='text-lg font-semibold bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center px-4 py-3'>AUTOR</h2>
+        <ul className='text-xs p-4'>
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Cazador Furtivo</strong><span className='font-bold text-violet-300'>$12</span>
+            </div>
+            <p className='font-normal opacity-80'>Jägermeister, triple sec, limón, jugo de naranja.</p>
           </li>
-          <li >
-            <strong>Michelada:</strong> Tabasco, merken, sal de autor, salsa inglesa - <span className='classic-price text-green-500'>$5</span>
-            <br /> Tabasco, merken, sal de autor, salsa inglesa.
+          <br />
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Amore Milano</strong><span className='font-bold text-violet-300'>$13</span>
+            </div>
+            <p className='font-normal opacity-80'>Whisky, Campari, jugo de pomelo, jugo de limón, goma.</p>
           </li>
-          <li >
-            <strong>Michelada Bloody:</strong> Todo lo anterior más bloody de tomate - <span className='classic-price text-green-500'>$6</span>
-            <br /> Todo lo anterior más bloody de tomate.
+        </ul>
+      </div>
+
+      {/* BAR SIN ALCOHOL Section */}
+      <div>
+        <h2 className='text-lg font-semibold bg-gradient-to-tr from-slate-500 to-slate-800 flex items-center px-4 py-3'>BAR SIN ALCOHOL</h2>
+        <ul className='text-xs p-4'>
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Jugos del Día</strong><span className='font-bold text-slate-400'>$6</span>
+            </div>
+            <p className='font-normal opacity-80'>Variedad de jugos frescos disponibles diariamente.</p>
+          </li>
+          <br />
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Cordillerano Autor</strong><span className='font-bold text-slate-400'>$7</span>
+            </div>
+            <p className='font-normal opacity-80'>Amargo de Angostura, Sprite, azahar, soda, limón.</p>
+          </li>
+        </ul>
+      </div>
+
+      {/* MICHELADAS Section */}
+      <div>
+        <h2 className='text-lg font-semibold bg-gradient-to-tr from-yellow-400 to-orange-400 flex items-center px-4 py-3'>MICHELADAS</h2>
+        <ul className='text-xs p-4'>
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Chelada Sal de Autor</strong><span className='font-bold text-yellow-300'>$5</span>
+            </div>
+            <p className='font-normal opacity-80'>Sal de autor.</p>
+          </li>
+          <br />
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Michelada</strong><span className='font-bold text-yellow-300'>$5</span>
+            </div>
+            <p className='font-normal opacity-80'>Tabasco, merken, sal de autor, salsa inglesa.</p>
+          </li>
+          <br />
+          <li>
+            <div className='flex items-center justify-between'>
+              <strong>Michelada Bloody</strong><span className='font-bold text-yellow-300'>$6</span>
+            </div>
+            <p className='font-normal opacity-80'>Todo lo anterior más bloody de tomate.</p>
           </li>
         </ul>
       </div>
