@@ -31,7 +31,7 @@ export default function Cartas() {
         <SwiperSlide >
           <Link href={'/tragos'}>
             <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-cyan-300 to-cyan-600'>
-              <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1+copia.png" alt="" className='w-full h-full object-cover rounded-md' />
+              <img src="https://app-valdi.s3.amazonaws.com/yagan/menus/tragos.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
             <p className='text-xs font-extralight py-1 '>Tragos</p>
           </Link>
@@ -40,7 +40,7 @@ export default function Cartas() {
         <SwiperSlide>
           <Link href={'/sushi'}>
             <div className='overflow-hidden  rounded-lg shadow-md border border-white/30  from-red-600 to-red-800'>
-              <img src="https://app-valdi.s3.amazonaws.com/menuSushi-03.png" alt="" className='w-full h-full object-cover rounded-md' />
+              <img src="https://app-valdi.s3.amazonaws.com/yagan/menus/sushi.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
             <p className='text-xs font-extralight py-1 '>Sushi</p>
           </Link>
@@ -50,7 +50,7 @@ export default function Cartas() {
           <Link href={'/carta'}>
             <div className='overflow-hidden rounded-lg  shadow-md  border border-white/30  from-yellow-300 to-green-200'>
 
-              <img src="https://app-valdi.s3.amazonaws.com/menus_Mesa+de+trabajo+1.png" alt="" className='w-full h-full object-cover rounded-md' />
+              <img src="https://app-valdi.s3.amazonaws.com/yagan/menus/platos.png" alt="" className='w-full h-full object-cover rounded-md' />
             </div>
             <p className='text-xs font-extralight py-1 '>Platos</p>
           </Link>
