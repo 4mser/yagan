@@ -225,7 +225,7 @@ const Topbar = () => {
                                 animate="open"
                                 exit="closed"
                             >
-                                <img src="/images/happyHour.png" alt="hH" className='w-full object-contain px-5 animate-neon' />
+                                <img src="https://app-valdi.s3.amazonaws.com/yagan/anuncios/happyHour.png" alt="hH" className='w-full object-contain px-5 animate-neon' />
                                 <p className='text-center'>Quedan: {timeUntilHappyHour} para el happy hour</p>
                             </motion.div>
                         </motion.div>
