@@ -436,7 +436,7 @@ const Page = () => {
             className='mt-4'
             initial='hidden'
             animate='visible'
-            transition={{delay: 0.2 * index, duration: 0.5}}
+            transition={{duration: 0.3}}
             variants={variants}
           >
             <h2 className={`text-lg font-semibold bg-gradient-to-tr ${section.gradientFrom} ${section.gradientTo} flex items-center px-4 py-3`}>
