@@ -469,6 +469,45 @@ const Page = () => {
       borderColor: "border-emerald-500"
     },
     {
+      title: "PROMOCIONES SUSHI",
+      items: [
+        {
+          name: "PRINCIPIANTE A",
+          description: "9 Pollo Frito- 9 Kanikama en Sésamo - 9 Camarón en Palta.",
+          price: "16.990"
+        },
+        {
+          name: "EXPERTO A",
+          description: "9 Camarón en Palta - 9 Pollo Frito - 9 Kanikama Frito - 9 Kanikama Sesamo",
+          price: "22.000"
+        },
+        {
+          name: "EXPERTO B",
+          description: "-",
+          price: "26.000"
+        },
+        {
+          name: "27 FRITOS",
+          description: "9 Pollo - 9 Camarón - 9 Kanikama",
+          price: "18.000"
+        },
+        {
+          name: "36 FRITOS",
+          description: "18 Pollo - 9 Camarón - 9 Kanikama",
+          price: "22.000"
+        },
+        {
+          name: "MENU SUSHI DEL DÍA",
+          description: "",
+          price: "7.500"
+        }
+      ],
+      gradientFrom: "from-blue-400",
+      gradientTo: "to-indigo-950",
+      priceColor: "text-indigo-300",
+      borderColor: "border-indigo-300"
+    },
+    {
       title: "GOHAN",
       items: [
         {
@@ -525,9 +564,11 @@ const Page = () => {
                   <h1 className='font-semibold'>{item.name}</h1>
                   <p className='font-normal opacity-70'>{item.description}</p>
                 </div>
-                <span className={`text-sm w-20 text-center font-medium border ${section.priceColor} ${section.borderColor} text- px-2 rounded-lg`}>
-                  ${item.price}
-                </span>
+                <div className={` min-w-20  border ${section.priceColor} ${section.borderColor}  px-2 rounded-lg`}>
+                  <p className='w-full text-sm text-center font-medium'>
+                    ${item.price}
+                  </p>
+                </div>
               </li>
             ))}
           </ul>
