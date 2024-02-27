@@ -197,9 +197,9 @@ const Page = () => {
         }
       ],
       gradientFrom: "red-700",
-      gradientTo: "red-950"
+      gradientTo: "red-950",
+      priceColor: "red-500"
     },
-    
     {
       title: "ENVUELTOS EN PALTA (9 PIEZAS)",
       items: [
@@ -235,7 +235,8 @@ const Page = () => {
         }
       ],
       gradientFrom: "green-700",
-      gradientTo: "yellow-500"
+      gradientTo: "yellow-500",
+      priceColor: "lime-400"
     },
     {
       title: "GOHAN",
@@ -272,7 +273,8 @@ const Page = () => {
         }
       ],
       gradientFrom: "red-950",
-      gradientTo: "amber-500"
+      gradientTo: "amber-500",
+      priceColor: "yellow-500"
     },
   ];
 
@@ -290,7 +292,7 @@ const Page = () => {
                   <h1 className='font-semibold'>{item.name}</h1>
                   <p className='font-normal opacity-80'>{item.description}</p>
                 </div>
-                <span className={`text-sm w-20 text-center font-medium border text-${section.gradientTo.split("-")[0]}-400 border-${section.gradientTo.split("-")[0]}-400 px-2 rounded-lg`}>
+                <span className={`text-sm w-20 text-center font-medium border text-${section.priceColor} border-${section.priceColor} px-2 rounded-lg`}>
                   ${item.price}
                 </span>
               </li>
