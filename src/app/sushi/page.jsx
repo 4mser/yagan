@@ -415,11 +415,11 @@ const Page = () => {
   return (
     <>
       {/* Barra de navegación deslizable en la parte superior */}
-      <div ref={navRef} className='fixed top-14 border-b border-white/10 bg-black left-0 w-full z-10 overflow-x-auto flex py-4 px-4 gap-3'>
+      <div ref={navRef} className='fixed top-14 border-b border-white/20 bg-black left-0 w-full z-10 overflow-x-auto flex py-4 px-4 gap-3'>
         {menuSections.map((section, index) => (
           <button
             key={index}
-            className='text-[12px] py-3 px-4 border whitespace-nowrap  border-white/10 rounded-lg'
+            className='text-[12px] py-3 px-4 border whitespace-nowrap  border-white/20 rounded-lg'
             onClick={() => navigateToSection(section.title)}
           >
             {section.title}
