@@ -1,5 +1,6 @@
 'use client'
 import React, { useRef } from 'react';
+import {motion} from 'framer-motion'
 
 // Función para limpiar el título y usarlo como id
 const sanitizeTitle = (title) => title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -404,6 +405,13 @@ const Page = () => {
     
   ];
 
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 }
+  };
+
+  
+
   return (
     <>
       {/* Barra de navegación deslizable en la parte superior */}
@@ -422,7 +430,15 @@ const Page = () => {
       {/* Contenido principal del menú */}
       <div className='pt-[117px]'>
         {menuSections.map((section, index) => (
-          <div key={index} id={sanitizeTitle(section.title)} className='mt-4'>
+          <motion.div 
+            key={index} 
+            id={sanitizeTitle(section.title)} 
+            className='mt-4'
+            initial='hidden'
+            animate='visible'
+            transition={{delay: 0.2 * index, duration: 0.5}}
+            variants={variants}
+          >
             <h2 className={`text-lg font-semibold bg-gradient-to-tr ${section.gradientFrom} ${section.gradientTo} flex items-center px-4 py-3`}>
               {section.title}
             </h2>
@@ -441,7 +457,8 @@ const Page = () => {
                 </li>
               ))}
             </ul>
-          </div>
+            
+          </motion.div>
         ))}
       </div>
     </>

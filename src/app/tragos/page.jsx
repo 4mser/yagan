@@ -61,7 +61,6 @@ const Page = () => {
   ]
   return (
     <div className='pt-14'>
-      {/* CLÁSICOS Section */}
       <div>
         <h2 className='text-lg font-semibold bg-gradient-to-tr to-cyan-500 from-blue-950 flex items-center px-4 py-3'>TRAGOS</h2>
         <ul className='text-xs p-4 flex gap-3 flex-col'>
