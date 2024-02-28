@@ -23,6 +23,7 @@ const Page = () => {
   const menuSections = [
     {
       title: "SUSHI ROLL SPECIAL (9 PIEZAS)",
+      filter: "SUSHI ROLL SPECIAL",
       items: [
         {
           name: "ROLLS ACEVICHADO (70)",
@@ -58,6 +59,7 @@ const Page = () => {
     },
     {
       title: "ENVUELTOS EN PALTA (9 PIEZAS)",
+      filter: "ENVUELTOS EN PALTA",
       items: [
         {
           name: "EBI TERIYAKI (1)",
@@ -97,6 +99,7 @@ const Page = () => {
     },
     {
       title: "ENVUELTOS EN PANKO (FRITOS) (9 PIEZAS)",
+      filter: "FRITOS EN PANKO",
       items: [
         {
           name: "PANKO ESPECIAL (13)", 
@@ -146,6 +149,7 @@ const Page = () => {
     },
     {
       title: "ENVUELTOS EN SALMÓN (9 PIEZAS)",
+      filter: "ENVUELTOS EN SALMÓN",
       items: [
         {
           name: "SAKEDU (24)",
@@ -175,6 +179,7 @@ const Page = () => {
     },
     {
       title: "CALIFORNIA ROLLS (9 PIEZAS)",
+      filter: "CALIFORNIA ROLLS",
       items: [
         {
           name: "KANI (36)",
@@ -219,6 +224,7 @@ const Page = () => {
     },
     {
       title: "ENVUELTOS EN QUESO CREMA (9 PIEZAS)",
+      filter: "ENVUELTOS EN QUESO CREMA",
       items: [
         {
           name: "SNOW EBI (44)",
@@ -248,6 +254,7 @@ const Page = () => {
     },
     {
       title: "ENVUELTOS MIX SALMÓN Y PALTA (9 PIEZAS)",
+      filter: "ENVUELTOS MIX SALMÓN Y PALTA",
       items: [
         {
           name: "EDU JAI (49)",
@@ -282,6 +289,7 @@ const Page = () => {
     },
     {
       title: "ENVUELTOS EN NORI (9 PIEZAS)",
+      filter: "ENVUELTOS EN NORI",
       items: [
         {
           name: "SAE MAKI (57)",
@@ -311,6 +319,7 @@ const Page = () => {
     },
     {
       title: "ROLLS SIN ARROZ",
+      filter: "ROLLS SIN ARROZ",
       items: [
         {
           name: "SAKE AVOCADO",
@@ -325,6 +334,7 @@ const Page = () => {
     },
     {
       title: "PROMOCIONES SUSHI",
+      filter: "PROMOS",
       items: [
         {
           name: "PRINCIPIANTE A",
@@ -364,6 +374,7 @@ const Page = () => {
     },
     {
       title: "GOHAN",
+      filter: "GOHAN",
       items: [
         {
           name: "GOHAN SHIRASHI EBI",
@@ -422,7 +433,7 @@ const Page = () => {
             className='text-[12px] py-3 px-4 border whitespace-nowrap  border-white/20 rounded-lg'
             onClick={() => navigateToSection(section.title)}
           >
-            {section.title}
+            {section.filter}
           </button>
         ))}
       </div>
